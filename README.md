@@ -38,6 +38,37 @@ The management expects detailed insights into the following:
 - Design a recovery dashboard with your metrics and analysis. The dashboard should be self-explanatory and easy to understand. 
 - Present your analysis and recommendations to the leadership team with actionable insights.
 
+
+## Learnings:
+
+### 1. Analytical Strategy & Storytelling Shift:
+- Prioritized mapping out the core data story on paper before touching a single visual layout.
+  - Outlined the chronological timeline of the operational collapse first saved me from getting backed into a corner where I had to force-fit a narrative around whatever random charts I had already dragged onto the canvas.
+- Flipped the dashboard's focus from descriptive reporting to deep diagnostic tracking.
+  - Moved past surface-level descriptive data ("Revenue crashed by 70.74%") and intentionally building diagnostic comparisons ("Kitchen prep times are flat across both phases, which means the breakdown is 100% caused by courier transit delays") to answer the executive "why."
+- Enforced a strict visual auditing discipline to stay honest and kill personal assumptions.
+- Forced myself to slow down and cross-examine new DAX calculations to protect core business logic from warping.
+
+
+### 2. Technical Data Modeling & Debugging Realities:
+- Exposed systemic database logging flaws instead of trusting raw data blindly.
+  - Discovered that 5,635 out of 11,112 cancelled orders had missing (NaN) delivery_partner_id values, proving that the vast majority of cancellations happened in a pre-assignment stage before a rider was ever locked in.
+- Untangled a major financial mapping error caused by orphaned records.
+  - Realized that when the system dropped orders, it zeroed out revenue and left the restaurant_id unmapped. This structural bug falsely dumped the entire ₹3.91M gross loss estimation (11,112 rows × ₹351.75 AOV) straight into the "Independent / Local" bucket.
+- Stabilized visual charts across wildly inconsistent historical data phases.
+  - Built an internal hardcoded DAX DATATABLE to force empty categories like "Power Users" to remain structurally visible on the X-axis during the crisis phase, even when the underlying data rows dropped to zero.
+- Fixed a common Power BI filter glitch caused by restaurant franchises operating in different cities.
+  - Tried to display restaurant names right next to their cities in a single visual broke my charts because over 19,600 rows had identical names (like Annapurna Biryani Adda) across different regions. I fixed this by keeping the visual focused strictly on the restaurant itself, and letting the dashboard's city slicer handle the geographic filtering naturally.
+
+
+ ### 3. Real-World Food Tech Domain Knowledge:
+ - Discovered just how fragile a food delivery network really is when logistics break down.
+   - Tracked how a seemingly small 15-minute delivery delay triggers an immediate customer backlash, instantly crashing average ratings from an excellent 4.5 stars down to a terrible 2.3.
+- Uncovered the real reason restaurants suddenly pull out and quit using the app.
+  - Learned that owners turn off their order tablets not because of high platform commissions, but because late drivers leave freshly cooked food sitting cold on the counter; which completely ruins the restaurant's own hard-earned reputation.
+- Noticed that operational reliability matters way more to customers than menu prices or food types during a crisis.
+  - Found that expensive luxury orders dropped at the exact same rate as cheap budget meals. It proved that hungry customers don't care about discounts or premium branding if they aren't confident the food will actually show up.
+
 ## Insights:
 
 - The 17.5-minute average SLA deficit is perfectly uniform across all cities, workforce models (contract vs. full-time), and vehicle types (bikes, cars, scooters).
