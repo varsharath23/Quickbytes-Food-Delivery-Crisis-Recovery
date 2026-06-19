@@ -38,7 +38,7 @@ The management expects detailed insights into the following:
 - Design a recovery dashboard with your metrics and analysis. The dashboard should be self-explanatory and easy to understand. 
 - Present your analysis and recommendations to the leadership team with actionable insights.
 
-## Learnings:
+## Insights:
 
 - The 17.5-minute average SLA deficit is perfectly uniform across all cities, workforce models (contract vs. full-time), and vehicle types (bikes, cars, scooters).
 - Kitchens and Couriers are blameless. Physical distances (~4.50 km) and kitchen prep times (~65% completed under 25 minutes) remained completely stable. Top-performing restaurants with prep times under 15 minutes still saw a 94% order drop.
@@ -60,6 +60,25 @@ The management expects detailed insights into the following:
 - Of the remaining base, 50.90% are at "Critical" or "High" risk of churning, with the threat heavily concentrated in Bengaluru, followed by Delhi and Mumbai.
 
 
+## Strategy:
+
+- Algorithmic Rollback:
+  Instantly roll back the dispatch routing, batching, and driver-assignment codebase to the stable mid-May 2025 configuration to resolve matching latency.
+
+- Operational Throttling:
+  Temporarily enforce strict order-throttling and shrink delivery radiuses to guarantee no active order is generated with an estimated delivery time exceeding 40 minutes.
+
+- Turn off all paid, social, and referral marketing spend immediately. Stop acquiring new users into a broken machine that yields a 1.09 order frequency.
+
+- Deploy 50% of partner retention and field support resources exclusively to the Bengaluru market to save the highest concentration of "Critical" risk merchants.
+
+- Implement temporary commission relief (such as 0% commission on the next 100 orders) specifically for the 50.90% of merchants sitting in high-risk tiers.
+
+- Stop automated restaurant suspensions triggered by "stale food" or "taste" text reviews. Subsidize thermal/insulated packaging during the interim to protect food integrity against transit delays.
+
+- Automate system triggers to issue an immediate apology and high-value wallet credit within 30 minutes of any delivery that breaches the 40-minute threshold. This actively targets the 5.33-hour average customer "retaliation lag."
+
+- Isolate the data for the 3,684 high-value churned customers. Once delivery metrics normalize under 40 minutes, execute a direct concierge outreach program with high-value financial compensation to win back the platform's core revenue drivers.
 
 
 
