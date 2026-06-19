@@ -5,10 +5,12 @@
 
 This is a data-driven crisis recovery and business intelligence project for food-tech startup QuickBite Express. It leverages sales, delivery operations, and sentiment data to diagnose a massive 2025 operational outage and brand crisis, providing targeted roadmaps to stabilize merchant partnerships and reactivate churned high-value users.
 
-Link to the [Challeng](https://codebasics.io/challenges/codebasics-resume-project-challenge/23)
+Link to the [Challenge](https://codebasics.io/challenges/codebasics-resume-project-challenge/23)
+
 Link to the [Interative Dashboard]
 
 ## Problem Statement
+
 QuickBite Express is a Bengaluru-based food-tech startup (founded in 2020) that connects customers with nearby restaurants and cloud kitchens.
 
 In June 2025, QuickBite faced a major crisis. A viral social media incident involving food safety violations at partner restaurants, combined with a week-long delivery outage during the monsoon season, triggered massive customer backlash. Competitors capitalized with aggressive campaigns, worsening the situation.
@@ -30,6 +32,7 @@ The management expects detailed insights into the following:
 
 
 ## Task
+
 - Go through the metadata and analyse the datasets thoroughly. This is the most fundamental step. 
 - Begin your analysis by referring to the provided questions and datasets. You can use any tool of your choice (Python, SQL, Power BI, Tableau, Excel) to analyse and answer these questions. 
 - Design a recovery dashboard with your metrics and analysis. The dashboard should be self-explanatory and easy to understand. 
