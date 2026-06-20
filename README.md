@@ -71,7 +71,7 @@ The management expects detailed insights into the following:
 
 ## Insights:
 
-- The 17.5-minute average SLA deficit is perfectly uniform across all cities, workforce models (contract vs. full-time), and vehicle types (bikes, cars, scooters).
+- The 18.1-minute average SLA deficit is nearly uniform across all cities, workforce models (contract vs. full-time), and vehicle types (bikes, cars, scooters).
 - Kitchens and Couriers are blameless. Physical distances (~4.50 km) and kitchen prep times (~65% completed under 25 minutes) remained completely stable. Top-performing restaurants with prep times under 15 minutes still saw a 94% order drop.
 - On-Time Delivery (OTD%) plummeted instantly from 43.10% in May to 12.02% in June, pointing strictly to a broken core dispatch matching algorithm.
 
