@@ -7,7 +7,7 @@ This is a data-driven crisis recovery and business intelligence project for food
 
 Link to the [Challenge](https://codebasics.io/challenges/codebasics-resume-project-challenge/23)
 
-Link to the [Interative Dashboard]
+Link to the [Interative Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNzZlOGEyMzgtM2I2Yy00NzJhLTgzZjUtZTI1OTQyMmZjOGFhIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
 ## Problem Statement
 
